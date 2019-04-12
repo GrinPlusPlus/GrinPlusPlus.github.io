@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "1857df8a01a7b02060d4",
-    "url": "/static/css/main.6d220076.chunk.css"
+    "revision": "288810a67fffcba9190d",
+    "url": "/static/css/main.9d98a6ee.chunk.css"
   },
   {
-    "revision": "1857df8a01a7b02060d4",
+    "revision": "288810a67fffcba9190d",
     "url": "/static/js/main.82be2849.chunk.js"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/static/media/telegram-512.c95607f0.png"
   },
   {
-    "revision": "7723cb387f8e6cc43ee2f71779ac4bf0",
+    "revision": "04ef331972022e3818c387f8cce8f685",
     "url": "/index.html"
   }
 ];
