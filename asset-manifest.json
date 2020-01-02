@@ -1,16 +1,19 @@
 {
-  "main.css": "/static/css/main.9d98a6ee.chunk.css",
-  "main.js": "/static/js/main.2f041f04.chunk.js",
-  "main.js.map": "/static/js/main.2f041f04.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.72d10f2d.chunk.js": "/static/js/2.72d10f2d.chunk.js",
-  "static/js/2.72d10f2d.chunk.js.map": "/static/js/2.72d10f2d.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.b89132b20fc0c8dc5a0cfdff68f7db8f.js": "/precache-manifest.b89132b20fc0c8dc5a0cfdff68f7db8f.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.9d98a6ee.chunk.css.map": "/static/css/main.9d98a6ee.chunk.css.map",
-  "static/media/GrinBanner_WhiteLetters.png": "/static/media/GrinBanner_WhiteLetters.62b3efaa.png",
-  "static/media/SendViaFile.gif": "/static/media/SendViaFile.254770b3.gif",
-  "static/media/telegram-512.png": "/static/media/telegram-512.c95607f0.png"
+  "files": {
+    "main.css": "/static/css/main.131da9f2.chunk.css",
+    "main.js": "/static/js/main.312d1dac.chunk.js",
+    "main.js.map": "/static/js/main.312d1dac.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.dbad527d.js",
+    "runtime~main.js.map": "/static/js/runtime~main.dbad527d.js.map",
+    "static/js/2.afc9b1c7.chunk.js": "/static/js/2.afc9b1c7.chunk.js",
+    "static/js/2.afc9b1c7.chunk.js.map": "/static/js/2.afc9b1c7.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b2779decdcceb7f792624efd0aabda79.js": "/precache-manifest.b2779decdcceb7f792624efd0aabda79.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.131da9f2.chunk.css.map": "/static/css/main.131da9f2.chunk.css.map",
+    "static/media/GrinBanner_WhiteLetters.png": "/static/media/GrinBanner_WhiteLetters.62b3efaa.png",
+    "static/media/SendViaFile.gif": "/static/media/SendViaFile.254770b3.gif",
+    "static/media/linux.png": "/static/media/linux.555320cb.png",
+    "static/media/telegram-512.png": "/static/media/telegram-512.c95607f0.png"
+  }
 }
