@@ -1,1 +1,386 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="shortcut icon" href="/GrinLogo.ico"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/manifest.json"/><title>Grin++</title><link href="/static/css/main.131da9f2.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],p=0,i=[];p<n.length;p++)t=n[p],Object.prototype.hasOwnProperty.call(a,t)&&a[t]&&i.push(a[t][0]),a[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),f()}function f(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==a[u]&&(n=!1)}n&&(c.splice(r--,1),e=p(p.s=t[0]))}return e}var t={},a={1:0},c=[];function p(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,p),r.l=!0,r.exports}p.m=l,p.c=t,p.d=function(e,r,t){p.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},p.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},p.t=function(r,e){if(1&e&&(r=p(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(p.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)p.d(t,n,function(e){return r[e]}.bind(null,n));return t},p.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return p.d(r,"a",r),r},p.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},p.p="/";var r=window.webpackJsonpgrinpp=window.webpackJsonpgrinpp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;f()}([])</script><script src="/static/js/2.afc9b1c7.chunk.js"></script><script src="/static/js/main.312d1dac.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Lightning Fast, Easy To Use, Private & Secure Grin Wallet for Windows, Linux and macOS"
+    />
+    <meta name="author" content="David Burkett" />
+    <title>Fast, Private and Secure Grin Wallet - Grin++</title>
+    <link rel="canonical" href="https://grinplusplus.github.io/" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="theme-color" content="#563d7c" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="jumbotron jumbotron-fluid black banner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-5">Private & Secure</h1>
+            <h1 class="display-4">Fully-encrypted wallet for Grin ツ</h1>
+            <p>
+              Grin++ was designed and coded to be secure, fast, and reliable.
+              Your keys, your coins, all transactions are done via TOR.
+            </p>
+          </div>
+          <div class="col justify-content-center align-self-center text-center">
+            <img src="/banner.png" class="img-fluid" alt="Grin++" />
+            <a
+              id="download-link"
+              href="https://github.com/GrinPlusPlus/GrinPlusPlus/releases"
+              class="btn btn-custom btn-lg download"
+              style="width: 250px;"
+            >
+              <img
+                id="download-icon"
+                src="/images/windows.png"
+                alt="Download Grin++"
+                width="35px" />Download <small id="version"></small
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="./svg/flash_on.svg" alt="Lightning Fast" class="feature" />
+          <h2>Lightning Fast</h2>
+          <p>
+            Send & receive instantly. Restore wallets in seconds. Node fully
+            syncs in minutes.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img src="/svg/mood.svg" alt="Lightning Fast" class="feature" />
+          <h2>Easy To Use</h2>
+          <p>
+            Transact via file, http(s), grinbox, or TOR. 100% compatible with
+            grin-wallet. No port forwarding required.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="/svg/cloud_queue.svg"
+            alt="Lightning Fast"
+            class="feature"
+          />
+          <h2>Highly Scalable</h2>
+          <p>
+            Ultra-modular design. Powerful multi-user wallet. Adjustable
+            caching.
+          </p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+      <div class="container text-center">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="/screenshots/grinpp_wallet.png"
+                style="width: calc(500px + 40vw);"
+                alt="Grin++ Wallet"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/screenshots/grinpp_create_account.png"
+                style="width: calc(500px + 40vw);"
+                alt="Create Account"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/screenshots/grinpp_create_wallet.png"
+                style="width: calc(500px + 40vw);"
+                alt="Create Grin Wallet"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/screenshots/grinpp_restore_wallet.png"
+                style="width: calc(500px + 40vw);"
+                alt="Restore Wallet"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/screenshots/grinpp_coin_control.png"
+                style="width: calc(500px + 40vw);"
+                alt="Coin Control"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Multiplatform.
+            <span class="text-muted"
+              >Support for most common operating systems.</span
+            >
+          </h2>
+          <p class="lead">
+            Windows, Linux, MacOS are supported. Full AES w/scrypt encryption to
+            protect your coins and privacy are implemented. Also, passwords
+            never stored in memory.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="/screenshots/wallet.png" alt="Wallet" />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">
+            Coin Control.
+            <span class="text-muted">Combine multiple transactions.</span>
+          </h2>
+          <p class="lead">
+            Control how you spend the coins in your wallet when sending a
+            transaction. You can choose what addresses will be the ones sending
+            the coins and which of the coins you have received will be used.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="/screenshots/coincontrol.png" alt="Coin Control" />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            Multi-user.
+            <span class="text-muted">Manage multiple accounts locally.</span>
+          </h2>
+          <p class="lead">
+            With Grin++ you can create multiple accounts separately. A crypto
+            wallet works just like a bank account where we can store the
+            transactions made, can use to send and receive digital currency.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="/screenshots/multiuser.png" alt="Wallet" />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="container">
+        <h1 class="text-center">Download</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="/images/windows.png" alt="Windows" /><br /><br />
+          <p>
+            <a
+              id="windows-download"
+              href="https://github.com/GrinPlusPlus/GrinPlusPlus/releases"
+              class="btn btn-lg btn-outline-dark"
+              style="width: 150px;"
+            >
+              Windows
+            </a>
+          </p>
+          <p><small>Windows 7 or later (64 bit only)</small></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="/images/linux.png" alt="Linux" /><br /><br />
+          <p>
+            <a
+              id="linux-download"
+              href="https://github.com/GrinPlusPlus/GrinPlusPlus/releases"
+              class="btn btn-lg btn-outline-dark"
+              style="width: 150px;"
+            >
+              Linux
+            </a>
+          </p>
+          <p>
+            <small>Ubuntu 16.04.2+, Debian 10+ (64 bit only)</small>
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <img src="/images/apple.png" alt="macOS" /><br /><br />
+          <p>
+            <a
+              id="macos-download"
+              href="https://github.com/GrinPlusPlus/GrinPlusPlus/releases"
+              class="btn btn-lg btn-outline-dark"
+              style="width: 150px;"
+            >
+              macOS
+            </a>
+          </p>
+          <p><small>macOS High Sierra (10.13) or later (64 bit only)</small></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">
+            Grin ツ
+            <span class="text-muted"
+              >The privacy-preserving digital currency.</span
+            >
+          </h2>
+          <p class="lead">
+            Grin is a lightweight implementation of the Mimblewimble protocol.
+            The main goal and characteristics of the Grin project are: Privacy,
+            Scalability, Simplicity, Cryptography and Decentralization. All
+            outputs in Grin are unique and have no common data with any previous
+            output. Instead of relying on a known address to send money,
+            transactions have to be built interactively, with two (or more)
+            wallets exchanging data with one another. This interaction does not
+            require both parties to be online at the same time. Grin wants to be
+            usable for everyone — regardless of borders, culture, skills or
+            access; to know more about about Grin, please visit
+            <a href="https://grin.mw/" class="btn btn-custom">GRIN.MW</a>
+          </p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+    </div>
+    <footer class="container text-center">
+      <p>
+        <a href="https://github.com/GrinPlusPlus"
+          ><img src="/images/github.png" width="40px"
+        /></a>
+        <a href="https://t.me/GrinPP"
+          ><img src="/images/telegram.png" width="40px"
+        /></a>
+      </p>
+    </footer>
+    <script src="/js/jquery-3.5.0.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let winVersion = navigator.appVersion.indexOf("Win") !== -1;
+        let macVersion = navigator.appVersion.indexOf("Mac") !== -1;
+        let windowsLink = "";
+        let macOSLink = "";
+        let linuxLink = "";
+
+        fetch(
+          "https://api.github.com/repos/GrinPlusPlus/GrinPlusPlus/releases/latest"
+        )
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (json) {
+            let version = json.tag_name.substring(1);
+            let downloadURL = "";
+            const assets = json.assets;
+            for (var i = 0; i < assets.length; i++) {
+              const asset = assets[i];
+              if (asset.browser_download_url != null) {
+                if (asset.browser_download_url.endsWith(".dmg"))
+                  macOSLink = asset.browser_download_url;
+                if (asset.browser_download_url.endsWith(".exe"))
+                  windowsLink = asset.browser_download_url;
+                if (asset.browser_download_url.endsWith(".AppImage"))
+                  linuxLink = asset.browser_download_url;
+                if (
+                  (macVersion && asset.browser_download_url.endsWith(".dmg")) ||
+                  (winVersion && asset.browser_download_url.endsWith(".exe")) ||
+                  (!macVersion &&
+                    !winVersion &&
+                    asset.browser_download_url.endsWith(".AppImage"))
+                ) {
+                  downloadURL = asset.browser_download_url;
+                }
+              }
+            }
+            $("#version").html("v" + version);
+            $("#download-link").attr("href", downloadURL);
+            $("#windows-download").attr("href", windowsLink);
+            $("#linux-download").attr("href", linuxLink);
+            $("#macos-download").attr("href", macOSLink);
+            if (winVersion)
+              $("#download-icon").attr("src", "/images/windows.png");
+            else if (macVersion)
+              $("#download-icon").attr("src", "/images/apple.png");
+            else $("#download-icon").attr("src", "/images/linux.png");
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      });
+    </script>
+  </body>
+</html>
