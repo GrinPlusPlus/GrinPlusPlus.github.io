@@ -2,8 +2,7 @@ html,
 body {
   padding-top: 0;
   padding-bottom: 0;
-  color: #5a5a5a;
-  background-color: whitesmoke;
+  background-color: #020202;
 }
 
 .banner {
@@ -22,11 +21,11 @@ body {
 
 .black {
   background-color: black;
-  color: white;
+  color: whitesmoke;
 }
 
 .marketing {
-  color: black;
+  color: whitesmoke;
 }
 
 .marketing .col-lg-4 {
