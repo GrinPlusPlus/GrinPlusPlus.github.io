@@ -56,11 +56,7 @@
                 class="btn btn-custom btn-lg download"
                 style="width: 250px"
               >
-                <img
-                  id="download-icon"
-                  src="/images/windows.png"
-                  alt="Download Grin++"
-                  width="35" />Download <small id="version"></small
+                Download <small id="version"></small
               ></a>
             </p>
           </div>
@@ -503,11 +499,6 @@
             $("#windows-download").attr("href", windowsLink);
             $("#linux-download").attr("href", linuxLink);
             $("#macos-download").attr("href", macOSLink);
-            if (winVersion)
-              $("#download-icon").attr("src", "/images/windows.png");
-            else if (macVersion)
-              $("#download-icon").attr("src", "/images/apple.png");
-            else $("#download-icon").attr("src", "/images/linux.png");
           })
           .catch(function (error) {
             console.log(error);
