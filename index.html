@@ -1,506 +1,256 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Lightning Fast, Easy To Use, Private & Secure Grin Wallet for Windows, Linux and macOS"
-    />
-    <meta name="author" content="David Burkett" />
-    <title>Fast, Private and Secure Grin Wallet - Grin++</title>
-    <link rel="canonical" href="https://grinplusplus.github.io/" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico" />
-    <meta name="theme-color" content="#563d7c" />
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+	<head>
+		<title>Fast, Private and Secure Grin Wallet - Grin++</title>
+		<meta name="description" content="Lightning Fast, Easy To Use, Private & Secure Grin Wallet for Windows, Linux ,macOS and Android">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="theme-color" content="#f4e915" />
+		<link rel="canonical" href="https://grinplusplus.github.io/"/>
+		<link rel="icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- 
+			<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		-->
+	</head>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <link href="style.css" rel="stylesheet" />
-  </head>
+	<body class="is-preload">
 
-  <body>
-    <div class="jumbotron jumbotron-fluid black banner">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="display-5">Private & Secure</h1>
-            <h1 class="display-4">Confidential Grin ツ Wallet</h1>
-            <p>
-              Grin++ was designed and coded to be secure, fast, and reliable.
-              Your keys, your coins, all transactions are done via TOR.
-            </p>
-          </div>
-          <div class="col justify-content-center align-self-center text-center">
-            <img src="/banner.png" class="img-fluid" alt="Grin++" />
-            <p>
-              <a
-                id="download-link"
-                href="https://github.com/GrinPlusPlus/GrinPlusPlus/releases"
-                class="btn btn-custom btn-lg download"
-                style="width: 250px"
-              >
-                Download <small id="version"></small
-              ></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container marketing">
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="./svg/flash_on.svg" alt="Lightning Fast" class="feature" />
-          <h2>Lightning Fast</h2>
-          <p>
-            Send & receive instantly. Restore wallets in seconds. Node fully
-            syncs in minutes.
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <img src="/svg/mood.svg" alt="Lightning Fast" class="feature" />
-          <h2>Easy To Use</h2>
-          <p>
-            Transact via file, http(s), or TOR. 100% compatible with
-            grin-wallet. No port forwarding required.
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <img
-            src="/svg/cloud_queue.svg"
-            alt="Lightning Fast"
-            class="feature"
-          />
-          <h2>Highly Scalable</h2>
-          <p>
-            Ultra-modular design. Powerful multi-user wallet. Adjustable
-            caching.
-          </p>
-        </div>
-      </div>
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h2>Private & Secure</h2>
+					<h1>Confidential Grin ツ Wallet</h1>
+					<p>Grin++ was designed and coded to be secure, fast, and reliable. Your keys, your coins, all transactions are done via TOR.</p>
+					<ul class="actions">
+						<li><a id="download-link" href="#" class="button primary icon fa-download">Download <small id="version"></small></a></li>
+						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
+					</ul>
+				</div>
+				<div class="image phone"><div class="inner"><img src="images/screen.jpeg" alt="GrinPlusPlus" /></div></div>
+			</header>
 
-      <hr class="featurette-divider" />
-      <div class="container text-center">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                class="d-block w-100"
-                src="/screenshots/grinpp_wallet.png"
-                style="width: calc(500px + 40vw)"
-                alt="Grin++ Wallet"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/screenshots/grinpp_init.png"
-                style="width: calc(500px + 40vw)"
-                alt="Coin Control"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/screenshots/grinpp_create_account.png"
-                style="width: calc(500px + 40vw)"
-                alt="Create Account"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/screenshots/grinpp_create_wallet.png"
-                style="width: calc(500px + 40vw)"
-                alt="Create Grin Wallet"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/screenshots/grinpp_send_coins.png"
-                style="width: calc(500px + 40vw)"
-                alt="Send Coins"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/screenshots/grinpp_receive_coins.png"
-                style="width: calc(500px + 40vw)"
-                alt="Receive Coins"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/screenshots/grinpp_console.png"
-                style="width: calc(500px + 40vw)"
-                alt="Wallet Console"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100"
-                src="/screenshots/grinpp_help.png"
-                style="width: calc(500px + 40vw)"
-                alt="Restore Wallet"
-              />
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
+		<!-- One -->
+			<section id="one" class="wrapper special">
+				<div class="inner alt">
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<img src="./images/flash_on.svg" alt="Lightning Fast" class="feature">
+							<h2>Lightning Fast</h2>
+							<p>Send & receive instantly. Restore wallets in seconds. Node fully syncs in minutes.</p>
+						</div>
+						
+						<div class="col-4 col-12-medium">
+							<img src="./images/mood.svg" alt="Easy To Use" class="feature">
+							<h2>Easy To Use</h2>
+							<p>Transact via file, http(s), or TOR. 100% compatible with grin-wallet. No port forwarding required.</p>
+						</div>
+						<div class="col-4 col-12-medium">
+							<img src="./images/cloud_queue.svg" alt="Highly Scalable" class="feature">
+							<h2>Highly Scalable</h2>
+							<p>Ultra-modular design. Powerful multi-user wallet. Adjustable caching.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <hr class="featurette-divider" />
+		<!-- PC Screenshot -->
+		<section id="screenshot" class="wrapper">
+			<div class="inner">
+				<div class="image pc">
+					<img src="images/screenshot.png" alt="" />
+				</div>
+			</div>
+		</section>
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">
-            Multiplatform.
-            <span class="text-muted"
-              >Support for most common operating systems.</span
-            >
-          </h2>
-          <p class="lead">
-            Windows, Linux, MacOS are supported. Full AES w/scrypt encryption to
-            protect your coins and privacy are implemented. Also, passwords
-            never stored in memory.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img src="/screenshots/wallet.png" alt="Wallet" />
-        </div>
-      </div>
+		<!-- Two -->
+			<section id="two" class="wrapper">
+				<div class="inner alt">
+					<section class="spotlight">
+						<div class="image"><img src="images/wallet.png" alt="" /></div>
+						<div class="content">
+							<h3>Multiplatform. <span class="muted">Support for most common operating systems.</span></h3>
+							<p>Windows, Linux, MacOS are supported. Full AES w/scrypt encryption to protect your coins and privacy are implemented. Also, passwords never stored in memory.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/coin_control.png" alt="" /></div>
+						<div class="content">
+							<h3>Coin Control. <span class="muted">Combine multiple transactions.</span></h3>
+							<p>Control how you spend the coins in your wallet when sending a transaction. You can choose what addresses will be the ones sending the coins and which of the coins you have received will be used.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/multiuser.png" alt="" /></div>
+						<div class="content">
+							<h3>Multi-user. <span class="muted">Manage multiple accounts locally.</span></h3>
+							<p>With Grin++ you can create multiple accounts separately. A crypto wallet works just like a bank account where we can store the transactions made, can use to send and receive digital currency.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/multi_language.png" alt="" /></div>
+						<div class="content">
+							<h3>Multi-language. <span class="muted">Turkish, Russian, Chinese and more.</span></h3>
+							<p>With users worldwide, Grin++ is available in 15 different languages.</p>
+						</div>
+					</section>
+				</div>
+			</section>
 
-      <hr class="featurette-divider" />
+			<!-- Three -->
+			<section id="download" class="wrapper strip">
+				<header class="major">
+					<h2>Download</h2>
+				</header>
+				<div class="inner alt align-center">
+					<div class="row">
+						<div class="col-3 col-6-medium">
+							<div class="feature icon brands fa-windows"></div>
+							<h3>Windows</h3>
+							<a id="windows-download" href="#" class="button fit">Download</a>
+							<p>Windows 7 or later (64 bit only)</p>
+						</div>
+						<div class="col-3 col-6-medium">
+							<div class="feature icon brands fa-linux"></div>
+							<h3>Linux</h3>
+							<a id="linux-download" href="#" class="button fit">Download</a>
+							<p>Ubuntu 16.04.2+, Debian 10+ (64 bit only</p>
+						</div>
+						<div class="col-3 col-6-medium">
+							<div class="feature icon brands fa-apple"></div>
+							<h3>macOS</h3>
+							<a id="macos-download" href="#" class="button fit">Download</a>
+							<p>macOS High Sierra (10.13) or later (64 bit only)</p>
+						</div>
+						<div class="col-3 col-6-medium">
+							<div class="feature icon brands fa-android"></div>
+							<h3>Android</h3>
+							<a href="https://play.google.com/store/apps/details?id=com.grinplusplus.mobile" class="button fit">Download</a>
+							<p>Android 9 or later (64 bit only)</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">
-            Coin Control.
-            <span class="text-muted">Combine multiple transactions.</span>
-          </h2>
-          <p class="lead">
-            Control how you spend the coins in your wallet when sending a
-            transaction. You can choose what addresses will be the ones sending
-            the coins and which of the coins you have received will be used.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img src="/screenshots/coin_control.png" alt="Coin Control" />
-        </div>
-      </div>
+		<!-- Four -->
+		<section id="four" class="wrapper">
+			<div class="inner">
+				<header>
+					<h2>Security Audit. +26k lines of code were audited.</h2>
+					<p>A community funded <a target="_blank" href="SmartDec Grin++ Security Audit.pdf">Security Audit</a> was performed by <a target="_blank" href="https://smartdec.com/">SmartDec</a>. The task was to find and describe security issues in the code base of the platform. The code was completely manually analyzed taking into consideration the Mimblewimble protocol specification and the C++ source code. Recommendations were properly followed and critical issues mitigated.</p>
+				</header>
+			</div>
+		</section>
 
-      <hr class="featurette-divider" />
+		<!-- Five -->
+		<section id="five" class="wrapper">
+			<div class="inner">
+				<header>
+					<h2>Grin ツ The privacy-preserving digital currency.</h2>
+					<p>Grin is a lightweight implementation of the Mimblewimble protocol. The main goal and characteristics of the Grin project are: Privacy, Scalability, Simplicity, Cryptography and Decentralization. All outputs in Grin are unique and have no common data with any previous output. Instead of relying on a known address to send money, transactions have to be built interactively, with two (or more) wallets exchanging data with one another. This interaction does not require both parties to be online at the same time. Grin wants to be usable for everyone — regardless of borders, culture, skills or access; to know more about about Grin, please visit <a target="_blank" href="https://grin.mw/">GRIN.MW</a></p>
+				</header>
+			</div>
+		</section>
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">
-            Multi-user.
-            <span class="text-muted">Manage multiple accounts locally.</span>
-          </h2>
-          <p class="lead">
-            With Grin++ you can create multiple accounts separately. A crypto
-            wallet works just like a bank account where we can store the
-            transactions made, can use to send and receive digital currency.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img src="/screenshots/multiuser.png" alt="Wallet" />
-        </div>
-      </div>
+		<!-- Six -->
+		<section id="six" class="wrapper strip">
+			<header class="major">
+				<h2>Contributing</h2>
+			</header>
+			<ul class="actions special">
+				<li><a target="_blank" href="bitcoin:3G39h3G7HneymYL4kdgkDFLoB9uQ536Cw1" class="button primary icon brands fa-btc">Donating</a></li>
+				<li><a target="_blank" href="https://github.com/GrinPlusPlus" class="button">Coding</a></li>
+				<li><a target="_blank" href="https://shop.grinplusplus.com/" class="button">Shoping</a></li>
+			</ul>
+			<h4 class="align-center">Bitcoin: 3G39h3G7HneymYL4kdgkDFLoB9uQ536Cw1</h4>
+		</section>
 
-      <hr class="featurette-divider" />
+		<!-- Footer -->
+			<footer id="footer" class="wrapper">
+				<div class="inner">
+					<div class="row">
+						<div class="col-6 col-12-medium">
+							<h3>About</h3>
+							<p>Grin++ has been originally developed by David Burkett as an alternative node and wallet implementation in C++ for the Grin/Mimblewimble protocol. Later, David Tavarez joined and built a full node mobile wallet based on Grin++.</p>
+						</div>
+						<div class="col-3 col-12-medium">
+							<h3>Contributors</h3>
+							<il>
+								<li>David Burkett</li>
+								<li>David Tavarez</li>
+								<li>....</li>
+								<li>....</li>
+							</il>
+						</div>
+						<div class="col-3 col-12-medium">
+							<h3>Links</h3>
+							<il>
+								<li><a target="_blank" href="https://github.com/GrinPlusPlus">Grin++ at Github</a></li>
+								<li><a target="_blank" href="https://github.com/GrinPlusPlus/GrinPlusPlus/wiki">Grin++ Wiki</a></li>
+								<li><a target="_blank" href="https://t.me/GrinPP">Grin++ on Telegram</a></li>
+								<li><a target="_blank" href="https://forum.grin.mw/">Grin forum on grin.mw</a></li>
+							</il>
+						</div>
+					</div>					
+				</div>
+			</footer>
 
-      <div class="container">
-        <h1 class="text-center">Download</h1>
-        <br />
-      </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				$(document).ready(function () {
+				  let winVersion = navigator.appVersion.indexOf("Win") !== -1;
+				  let macVersion = navigator.appVersion.indexOf("Mac") !== -1;
+				  let windowsLink = "";
+				  let macOSLink = "";
+				  let linuxLink = "";
+		  
+				  fetch(
+					"https://api.github.com/repos/GrinPlusPlus/GrinPlusPlus/releases/latest"
+				  )
+					.then(function (response) {
+					  return response.json();
+					})
+					.then(function (json) {
+					  let version = json.tag_name.substring(1);
+					  let downloadURL = "";
+					  const assets = json.assets;
+					  for (var i = 0; i < assets.length; i++) {
+						const asset = assets[i];
+						if (asset.browser_download_url != null) {
+						  if (asset.browser_download_url.endsWith(".dmg"))
+							macOSLink = asset.browser_download_url;
+						  if (asset.browser_download_url.endsWith(".exe"))
+							windowsLink = asset.browser_download_url;
+						  if (asset.browser_download_url.endsWith(".AppImage"))
+							linuxLink = asset.browser_download_url;
+						  if (
+							(macVersion && asset.browser_download_url.endsWith(".dmg")) ||
+							(winVersion && asset.browser_download_url.endsWith(".exe")) ||
+							(!macVersion &&
+							  !winVersion &&
+							  asset.browser_download_url.endsWith(".AppImage"))
+						  ) {
+							downloadURL = asset.browser_download_url;
+						  }
+						}
+					  }
+					  $("#version").html("v" + version);
+					  $("#download-link").attr("href", downloadURL);
+					  $("#windows-download").attr("href", windowsLink);
+					  $("#linux-download").attr("href", linuxLink);
+					  $("#macos-download").attr("href", macOSLink);
+					})
+					.catch(function (error) {
+					  console.log(error);
+					});
+				});
+			  </script>
 
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="/images/windows.png" alt="Windows" /><br /><br />
-          <p>
-            <a
-              id="windows-download"
-              href="https://github.com/GrinPlusPlus/GrinPlusPlus/releases"
-              class="btn btn-lg btn-outline-light"
-              style="width: 150px"
-            >
-              Windows
-            </a>
-          </p>
-          <p><small>Windows 7 or later (64 bit only)</small></p>
-        </div>
-        <div class="col-lg-4">
-          <img src="/images/linux.png" alt="Linux" /><br /><br />
-          <p>
-            <a
-              id="linux-download"
-              href="https://github.com/GrinPlusPlus/GrinPlusPlus/releases"
-              class="btn btn-lg btn-outline-light"
-              style="width: 150px"
-            >
-              Linux
-            </a>
-          </p>
-          <p>
-            <small>Ubuntu 16.04.2+, Debian 10+ (64 bit only)</small>
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <img src="/images/apple.png" alt="macOS" /><br /><br />
-          <p>
-            <a
-              id="macos-download"
-              href="https://github.com/GrinPlusPlus/GrinPlusPlus/releases"
-              class="btn btn-lg btn-outline-light"
-              style="width: 150px"
-            >
-              macOS
-            </a>
-          </p>
-          <p><small>macOS High Sierra (10.13) or later (64 bit only)</small></p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="/images/android.png" alt="Android" /><br /><br />
-          <p>
-            <a
-              id="android-download"
-              href="https://play.google.com/store/apps/details?id=com.grinplusplus.mobile"
-              class="btn btn-lg btn-outline-light"
-              style="width: 150px"
-            >
-              Android
-            </a>
-          </p>
-          <p><small>Android 9 or later (64 bit only)</small></p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">
-            Multi-language.
-            <span class="text-muted">Turkish, Russian, Chinese and more.</span>
-          </h2>
-          <p class="lead">
-            With users worldwide, Grin++ is available in 15 different languages.
-          </p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img src="/screenshots/multi_language.png" alt="Multi-language" />
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-
-      <div class="row featurette">
-        <div class="col-md-12">
-          <h2 class="featurette-heading">
-            Security Audit.
-            <span class="text-muted">+26k lines of code were audited.</span>
-          </h2>
-          <p class="lead">
-            A community funded
-            <a href="/SmartDec%20Grin%2B%2B%20Security%20Audit.pdf"
-              >Security Audit</a
-            >
-            was performed by <a href="https://smartdec.com/">SmartDec</a>. The
-            task was to find and describe security issues in the code base of
-            the platform. The code was completely manually analyzed taking into
-            consideration the Mimblewimble protocol specification and the C++
-            source code. Recommendations were properly followed and critical
-            issues mitigated.
-          </p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-
-      <div class="row featurette">
-        <div class="col-md-12">
-          <h2 class="featurette-heading">
-            Grin ツ
-            <span class="text-muted"
-              >The privacy-preserving digital currency.</span
-            >
-          </h2>
-          <p class="lead">
-            Grin is a lightweight implementation of the Mimblewimble protocol.
-            The main goal and characteristics of the Grin project are: Privacy,
-            Scalability, Simplicity, Cryptography and Decentralization. All
-            outputs in Grin are unique and have no common data with any previous
-            output. Instead of relying on a known address to send money,
-            transactions have to be built interactively, with two (or more)
-            wallets exchanging data with one another. This interaction does not
-            require both parties to be online at the same time. Grin wants to be
-            usable for everyone — regardless of borders, culture, skills or
-            access; to know more about about Grin, please visit
-            <a href="https://grin.mw/" class="btn btn-custom">GRIN.MW</a>
-          </p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-
-      <div class="container">
-        <h1 class="text-center">Contributing</h1>
-        <br />
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="/images/bitcoin-icon.png" alt="bitcoin" /><br /><br />
-          <p>
-            <a
-              href="/images/donate-icon.png"
-              class="btn btn-lg btn-outline-light"
-            >
-              Donating
-            </a>
-          </p>
-          <p><small>bitcoin:3G39h3G7HneymYL4kdgkDFLoB9uQ536Cw1</small></p>
-        </div>
-        <div class="col-lg-4">
-          <img src="/images/coding-icon.png" alt="github" /><br /><br />
-          <p>
-            <a
-              href="https://github.com/GrinPlusPlus"
-              class="btn btn-lg btn-outline-light"
-            >
-              Coding
-            </a>
-          </p>
-          <p>
-            <small>C++, TypeScript, NodeJS</small>
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <img src="/images/shopping-icon.png" alt="shopping" /><br /><br />
-          <p>
-            <a
-              href="https://shop.grinplusplus.com/"
-              class="btn btn-lg btn-outline-light"
-            >
-              Shopping
-            </a>
-          </p>
-          <p><small>Visit out store</small></p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider" />
-    </div>
-    <footer class="container text-center">
-      <p>
-        <a href="https://t.me/GrinPP"
-          ><img alt="Telegram" src="/images/telegram.png" width="50"
-        /></a>
-      </p>
-    </footer>
-    <script src="/js/jquery-3.5.0.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        let winVersion = navigator.appVersion.indexOf("Win") !== -1;
-        let macVersion = navigator.appVersion.indexOf("Mac") !== -1;
-        let windowsLink = "";
-        let macOSLink = "";
-        let linuxLink = "";
-
-        fetch(
-          "https://api.github.com/repos/GrinPlusPlus/GrinPlusPlus/releases/latest"
-        )
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (json) {
-            let version = json.tag_name.substring(1);
-            let downloadURL = "";
-            const assets = json.assets;
-            for (var i = 0; i < assets.length; i++) {
-              const asset = assets[i];
-              if (asset.browser_download_url != null) {
-                if (asset.browser_download_url.endsWith(".dmg"))
-                  macOSLink = asset.browser_download_url;
-                if (asset.browser_download_url.endsWith(".exe"))
-                  windowsLink = asset.browser_download_url;
-                if (asset.browser_download_url.endsWith(".AppImage"))
-                  linuxLink = asset.browser_download_url;
-                if (
-                  (macVersion && asset.browser_download_url.endsWith(".dmg")) ||
-                  (winVersion && asset.browser_download_url.endsWith(".exe")) ||
-                  (!macVersion &&
-                    !winVersion &&
-                    asset.browser_download_url.endsWith(".AppImage"))
-                ) {
-                  downloadURL = asset.browser_download_url;
-                }
-              }
-            }
-            $("#version").html("v" + version);
-            $("#download-link").attr("href", downloadURL);
-            $("#windows-download").attr("href", windowsLink);
-            $("#linux-download").attr("href", linuxLink);
-            $("#macos-download").attr("href", macOSLink);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      });
-    </script>
-  </body>
+	</body>
 </html>
